@@ -7,7 +7,8 @@
 # BEST PRACTICE: Use a secure secrets management tool (e.g., HashiCorp Vault, AWS Secrets Manager)
 # or inject secrets via environment variables for non-production environments.
 
-DB_PASSWORD_VIOLATION = "SuperSecurePa$$word123"
+import os
+DB_PASSWORD_VIOLATION = os.environ.get("DB_PASSWORD_VIOLATION")
 DB_USER_VIOLATION = "admin_user"
 API_KEY_VIOLATION = "XYZ123ABC456DEF789GHI000"
 
