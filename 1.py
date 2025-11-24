@@ -8,6 +8,7 @@
 # or inject secrets via environment variables for non-production environments.
 
 import os
+#DB_PASSWORD_VIOLATION = "paswword@123"
 DB_PASSWORD_VIOLATION = os.environ.get("DB_PASSWORD_VIOLATION")
 DB_USER_VIOLATION = "admin_user"
 API_KEY_VIOLATION = "XYZ123ABC456DEF789GHI000"
