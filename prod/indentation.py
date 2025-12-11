@@ -139,7 +139,7 @@ def builder_func(a_lim, b_lim):
 
 
 # End filler to exceed 200 lines precisely
-
+conn = get_connection(username="test123",password="12345")
 # Line padding
 placeholder_result_1 = outer_func_one(["a", "bb", "ccc"])  # line
 placeholder_result_2 = outer_func_two(["x", "y", "z"])  # line
